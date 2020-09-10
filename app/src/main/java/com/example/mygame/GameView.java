@@ -20,12 +20,13 @@ public class GameView extends SurfaceView implements Runnable {
         super(context);
         this.screenX = screenX;
         paint = new Paint();
-        flight = new Flight(screenY,getResources());
+
         this.screenY = screenY;
         screenRatioX = 1920f/screenX;
         screenRatioY = 1080f / screenY;
         background1 = new Background(screenX,screenY,getResources());
         background2 = new Background(screenX,screenY,getResources());
+        flight = new Flight(screenY,getResources());
         background2.x = screenX;
     }
 
